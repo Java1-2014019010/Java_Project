@@ -21,6 +21,20 @@ public class Calculator {
 		System.out.println("multi : "+ c);
 		
 		input.close();  //문(귀)을 닫아야해!! (필수는 아니야)
+		
+
 	}
 
 }
+
+//		int i, j;
+//		i = 1;
+//		j = ++i; >> i=1+1=2 & j=2
+		
+//		int i, j;
+//		i = 1;
+//		j = i++; >> j=1 & i=1+1=2
+
+//		x=1
+//      y=++x + x++ + --x + x++ + ++x >> x=1+1-1+1=2 & y=10
+		
