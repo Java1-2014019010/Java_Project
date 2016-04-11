@@ -11,7 +11,7 @@ public class Selection {
 		int in;
 		in = input.nextInt();
 
-		if (in == 0) { // if(조건식!)
+		if (in == 0) { // if(조건식)
 			System.out.println("in is 0");
 		} else if ((in % 2) == 0) {
 			System.out.println("in is even");
