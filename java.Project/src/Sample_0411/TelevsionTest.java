@@ -12,22 +12,31 @@ public class TelevsionTest {
 		myTv.channel = 18;
 		myTv.volume = 20;
 		myTv.onOff = true;
+//		myTv.onOff = false;
 		
-		System.out.println(myTv.channel + " " + myTv.volume + " " + myTv.onOff);
+//		myTv.volume = myTv.volumeUP(30); //return
+		myTv.volumeUP(30);  //(변수:int data) 함수안에 매개변수가 다를때 두 함수 모두 쓰면 둘다 동시에 로딩된다
+		myTv.volumeUP();    //(변수:_)
+		
+		myTv.pr();
+		
+		//System.out.println("myTv"+" "+myTv.channel + " " + myTv.volume + " " + myTv.onOff);
 
 		yourTv.channel = 18;
 		yourTv.volume = 20;
         yourTv.onOff = true;
         
-        System.out.println(yourTv.channel + " " + yourTv.volume + " " + yourTv.onOff);
+        System.out.println("yourTv"+" "+yourTv.channel + " " + yourTv.volume + " " + yourTv.onOff);
 
         myTv.channel = 231;
         
         //testTv = null;    testTv 출력이 안된다
-		System.out.println(testTv.channel + " " + testTv.volume + " " + testTv.onOff);
+		System.out.println("testTv"+" "+testTv.channel + " " + testTv.volume + " " + testTv.onOff);
 		testTv = null;    //생성된 객체 없애기
 		
 		//myTv와 yourTv의 크기는 같다!!그러니까 배열을 만들수있다
+		
+		
 	}
 
 }
