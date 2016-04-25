@@ -5,6 +5,15 @@ public class Account {
 	private String name;
 	private int balance;
 
+	
+	Account(int regNumber, String name, int balance){
+		this.regNumber = regNumber;
+		this.name = name;
+		this.balance = balance;
+	}
+
+	Account(){this(1,"2",3);}
+	
 	public String getName() {
 		return name;
 	}
