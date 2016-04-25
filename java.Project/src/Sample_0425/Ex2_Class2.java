@@ -8,12 +8,15 @@ public class Ex2_Class2 {
 
 		int menu = 0;
 		Ex2_Class1 cc = new Ex2_Class1();
+		
 		Scanner input = new Scanner(System.in);
+		
 		do {
 			System.out.println("1. I. S. ");
 			System.out.println("2. I. A. ");
 			System.out.println("3. Quit. ");
 			System.out.println("Input menu number : ");
+
 			menu = input.nextInt();
 
 			if (menu == 1)
