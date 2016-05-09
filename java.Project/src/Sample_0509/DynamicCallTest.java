@@ -1,13 +1,14 @@
 package Sample_0509;
 
 abstract class Animal2{
-	abstract void sound(){
+	abstract void sound();//{
 //		System.out.println("Animal 클래스의  sound()");
-	}
+	//}
 }
 
 class Dog extends Animal2{
 	private int d=11;
+	@Override
 	void sound(){
 		System.out.println("멍멍"+d);
 	}
@@ -15,6 +16,7 @@ class Dog extends Animal2{
 
 class Cat extends Animal2{
 	private int c=99;
+	@Override
 	void sound(){
 		System.out.println("야옹"+c);
 	}
@@ -23,7 +25,8 @@ class Cat extends Animal2{
 public class DynamicCallTest {
 
 	public static void main(String[] args) {
-		
+	
+//		책
 //		Animal2 animal = new Animal2();
 //		Dog dog = new Dog();
 //		Cat cat = new Cat();
@@ -52,6 +55,6 @@ public class DynamicCallTest {
 
 	static void test(Animal2 temp) {
 		temp.sound();
-	}
+	}//이 함수를 만들기 위해서는 다형성을 사용할 수 밖에없다
 
 }
