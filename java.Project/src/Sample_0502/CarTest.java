@@ -9,6 +9,7 @@ public class CarTest {
 		System.out.println(Car.numbers);
 		
 		//Car c1 = new Car("s600","white",80);
+		//c1.
 		
 		System.out.println(Car.numbers);
 		
